@@ -1,0 +1,10 @@
+Type commands in the shell:
+
+for Alexnet:
+python ..\weathernet\Alexnet\ClassifierA.py --image <way to your jpg> --model ..\Qualifier.model --label-bin ..\weathernet\Alexnet\QualifierLb.pickle
+
+for LeNet:
+python..\weathernet\LeNet\ClassifierL.py --image <way to your jpg> --model ..\QualifierL.model --label-bin ..\weathernet\LeNet\QualifierLbL.pickle
+
+for ZfNet:
+python ..\weathernet\ZfNet\ClassifierZ.py --image <way to your jpg> --model ..\QualifierZ.model --label-bin ..\weathernet\ZfNet\QualifierLbZ.pickle
