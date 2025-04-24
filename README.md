@@ -50,6 +50,11 @@ python main.py train_multigpu_2T -s trainval -c ./configs/config_nT_da.py --logd
 
 This script allows training using classes: vehicle, drivable_area, walkway, lane_divider, ped_crossing and stop_line.
 
+## Our Contribution
+
+Our contribution to this project was the integration of dynamic attention weights into the transformer architecture, enabling the model to adaptively learn which sensor modality (LiDAR or RGB) to prioritize under varying weather conditions. By adjusting attention weights during training, the network becomes more robust and context-aware, improving semantic grid prediction performance in challenging scenarios such as rain or nighttime driving.
+
+
 ## Acknowledgement
 
 This model repo is created using Philion and Fidler's work [Lift, Splat, Shoot](https://github.com/nv-tlabs/lift-splat-shoot). Pillar feature net based on [GndNet](https://github.com/anshulpaigwar/GndNet) work. And multi-modal fuser transformer based on Prakash et al work [TransFuser](https://github.com/autonomousvision/transfuser).
